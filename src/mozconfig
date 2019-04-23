@@ -70,5 +70,5 @@ ac_add_options --disable-geckodriver
 # Disable checking that add-ons are signed by the trusted root
 mk_add_options MOZ_ADDON_SIGNING
 
-# Disable Web app for Firefox performance analysis
+# Disable Web App for Firefox performance analysis
 ac_add_options --disable-profiling
