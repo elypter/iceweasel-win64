@@ -1,0 +1,9 @@
+#filter substitution
+#include @BOOKMARKS_INCLUDE_PATH@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<meta charset="UTF-8">
+<title>@bookmarks_title@</title>
+<h1>@bookmarks_heading@</h1>
+
+<dl><p>
+</dl>

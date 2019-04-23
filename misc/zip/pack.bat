@@ -1,0 +1,1 @@
+zip -qr0XD omni.ja *

@@ -1,0 +1,68 @@
+# Make 64 bit build
+ac_add_options --host=x86_64-pc-mingw32
+ac_add_options --target=x86_64-pc-mingw32
+
+# Disable assertions in C++ and JavaScript
+ac_add_options --disable-debug
+ac_add_options --disable-debug-symbols
+
+# Disable building test libraries and programs
+ac_add_options --disable-tests
+
+# Enable jemalloc (memory allocator)
+ac_add_options --enable-jemalloc
+
+# Disable and hide Firefox Accounts And Sync
+mk_add_options MOZ_SERVICES_SYNC=0
+
+# Disable Telemetry
+mk_add_options MOZ_SERVICES_HEALTHREPORT=0
+mk_add_options MOZ_DATA_REPORTING=0
+mk_add_options MOZ_TELEMETRY_REPORTING=0
+
+# Set branding folder (/src/browser/branding/official/) and Distribution ID
+ac_add_options --enable-official-branding
+ac_add_options --with-distribution-id=io.github.muslayev
+
+# Set telemetry option to "false" ("toolkit.telemetry.enabled" is locked to "true" on beta, aurora, nightly and default channels)
+ac_add_options --enable-update-channel=release
+
+# Disable Wi-Fi geolocation service
+ac_add_options --disable-necko-wifi
+
+# Disable built-in extensions from "/scr/extensions/" folder
+ac_add_options --disable-extensions
+
+# Disable scanning for global plugins, used to detect RealPlayer, Java, Antivirus, etc. [WINDOWS]
+ac_add_options --disable-system-extension-dirs
+
+# Disable Mozilla Maintenance Service (allows Firefox updates to occur in the background)
+ac_add_options --disable-maintenance-service
+
+# Disable Firefox Updater Application
+ac_add_options --disable-updater
+
+# Disable Crash Reporter Application
+ac_add_options --disable-crashreporter
+
+# Disable Parental Controls
+ac_add_options --disable-parental-controls
+
+# Disable all DRM (Digital Rights Management) content support
+ac_add_options --disable-eme
+
+# Disable WebRTC (Real-Time Communications) support
+ac_add_options --disable-webrtc
+
+# Disable Accessibility support
+ac_add_options --disable-accessibility
+
+# Disable support for Web Speech API
+ac_add_options --disable-webspeech
+ac_add_options --disable-webspeechtestbackend
+
+# Disable speech recognition, part of the Web Speech API
+ac_add_options --disable-synth-speechd
+
+# Disable WebDriver API (used by automation engineers)
+ac_add_options --disable-geckodriver
