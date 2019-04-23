@@ -104,6 +104,8 @@ pref("privacy.trackingprotection.enabled", true);
 pref("privacy.donottrackheader.enabled", true);
 // Disable SPDY (networking protocol, which is supposed to reduce load latency on websites is yet another way of determining your real profile regardless if the user agent is spoofed)
 pref("network.http.spdy.enabled", false);
+// Disable Online Certificate Status Protocol (used for obtaining the revocation status of certificate)
+pref("security.OCSP.enabled", 0);
 // Enable Resist Fingerprinting Mode [not remembering last window size]
 // pref("privacy.resistFingerprinting", true);
 
@@ -190,6 +192,10 @@ pref("javascript.options.ion", false);
 pref("javascript.options.baselinejit", false);
 // Disable WebAssembly Web API (a type of code that can be run in browsers)
 pref("javascript.options.wasm", false);
+// Disable OpenType-SVG fonts (fonts with multiple colors and gradients)
+pref("gfx.font_rendering.opentype_svg.enabled", false);
+// Disable online fonts (from fonts.google.com)
+pref("gfx.downloadable_fonts.enabled", false);
 
 /************UPDATING************/
 // Disable Mozilla Maintenance Service (allows Firefox updates to occur in the background), and remove update URL
