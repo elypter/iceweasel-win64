@@ -1,4 +1,4 @@
-# Make 64 bit build
+# Make 64-bit build
 ac_add_options --host=x86_64-pc-mingw32
 ac_add_options --target=x86_64-pc-mingw32
 
