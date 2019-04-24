@@ -1,30 +1,30 @@
 {
-	"Iceweasel": {
-		"win_x86-64": {
-			"en-US": {
-				"version": "66.0.3",
-				"url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.3/iceweasel-66.0.3.en-US.win64.installer.exe"
-			}
-		},
-		"win_x86-32": {
-			"en-US": {
-				"version": "66.0.3",
-				"url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.3/iceweasel-66.0.3.en-US.win32.installer.exe"
-			}
-		}
-	},
-	"IceCat": {
-		"win_x86-64": {
-			"en-US": {
-				"version": "60.6.1",
-				"url": "https://github.com/muslayev/icecat-win64/releases/download/v60.6.1/icecat-60.6.1.en-US.win64.installer.exe"
-			}
-		},
-		"win_x86-32": {
-			"en-US": {
-				"version": "60.6.1",
-				"url": "https://github.com/muslayev/icecat-win64/releases/download/v60.6.1/icecat-60.6.1.en-US.win32.installer.exe"
-			}
-		}
-	}
+ "Iceweasel": {
+  "win_x86-64": {
+   "en-US": {
+    "version": "66.0.3",
+    "url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.3/iceweasel-66.0.3.en-US.win64.installer.exe"
+   }
+  },
+  "win_x86-32": {
+   "en-US": {
+    "version": "66.0.3",
+    "url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.3/iceweasel-66.0.3.en-US.win32.installer.exe"
+   }
+  }
+ },
+ "IceCat": {
+  "win_x86-64": {
+   "en-US": {
+    "version": "60.6.1",
+    "url": "https://github.com/muslayev/icecat-win64/releases/download/v60.6.1/icecat-60.6.1.en-US.win64.installer.exe"
+   }
+  },
+  "win_x86-32": {
+   "en-US": {
+    "version": "60.6.1",
+    "url": "https://github.com/muslayev/icecat-win64/releases/download/v60.6.1/icecat-60.6.1.en-US.win32.installer.exe"
+   }
+  }
+ }
 }
