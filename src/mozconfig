@@ -2,6 +2,11 @@
 ac_add_options --host=x86_64-pc-mingw32
 ac_add_options --target=x86_64-pc-mingw32
 
+# Make 32-bit build
+# ac_add_options --target=i686-pc-mingw32
+# ac_add_options --host=i686-pc-mingw32
+# export USE_STUB_INSTALLER=0
+
 # Disable assertions in C++ and JavaScript
 ac_add_options --disable-debug
 ac_add_options --disable-debug-symbols
