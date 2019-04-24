@@ -73,7 +73,10 @@ ac_add_options --disable-synth-speechd
 ac_add_options --disable-geckodriver
 
 # Disable checking that add-ons are signed by the trusted root
-mk_add_options MOZ_ADDON_SIGNING
+mk_add_options MOZ_ADDON_SIGNING=0
+
+# Disable enforcing that add-ons are signed by the trusted root
+mk_add_options MOZ_REQUIRE_SIGNING=0
 
 # Disable Web App for Firefox performance analysis
 ac_add_options --disable-profiling
