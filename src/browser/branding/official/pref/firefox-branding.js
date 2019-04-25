@@ -168,7 +168,7 @@ pref("pdfjs.disabled", true);
 pref("accessibility.force_disabled", 1);
 // Number of milliseconds between session saving operations
 pref("browser.sessionstore.interval", 30000);
-// Don't require xpi extensions and language packs to be signed by Mozilla
+// Don't require extensions and language packs to be signed by Mozilla
 pref("xpinstall.signatures.required", false);
 pref("extensions.langpacks.signatures.required", false);
 // Change URLs of extensions
