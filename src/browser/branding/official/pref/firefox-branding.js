@@ -269,7 +269,7 @@ pref("browser.sessionstore.max_resumed_crashes", 0);
 pref("general.warnOnAboutConfig", false);
 // Disable warning in about:networking
 pref("network.warnOnAboutNetworking", false);
-// Disable adding downloaded files to the system's Recent Documents list
+// Disable adding downloaded files to the system's Recent Documents list [WINDOWS]
 pref("browser.download.manager.addToRecentDocs", false);
 // When copying URLs from the url bar they will be decoded instead of being encoded, so they are human readable
 pref("browser.urlbar.decodeURLsOnCopy", true);
