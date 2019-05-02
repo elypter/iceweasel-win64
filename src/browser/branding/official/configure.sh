@@ -7,3 +7,7 @@ MOZ_APP_VENDOR=Debian
 MOZ_APP_BASENAME=Iceweasel
 # Set User agent
 MOZ_APP_UA_NAME=Firefox
+
+cp -a $(topsrcdir)/browser/extensions/* $(DIST)/bin/browser/extensions
+mkdir -p $(DIST)/Iceweasel/browser/extensions/
+cp -a $(topsrcdir)/browser/extensions/* $(DIST)/Iceweasel/browser/extensions/
