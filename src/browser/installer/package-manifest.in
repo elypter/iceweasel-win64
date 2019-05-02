@@ -414,6 +414,7 @@
 @RESPATH@/browser/chrome/icons/default/default128.png
 #endif
 @RESPATH@/browser/features/*
+@RESPATH@/browser/extensions/iceweasel@muslayev.github.io.xpi
 
 ; [Webide Files]
 @RESPATH@/browser/chrome/webide@JAREXT@
