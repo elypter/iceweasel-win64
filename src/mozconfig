@@ -14,8 +14,8 @@ ac_add_options --disable-debug-symbols
 # Disable building test libraries and programs
 ac_add_options --disable-tests
 
-# Enable jemalloc (memory allocator)
-ac_add_options --enable-jemalloc
+# Enable jemalloc (memory allocator) - is not working with PGO
+# ac_add_options --enable-jemalloc
 
 # Enable Profile-guided optimization (improving program runtime performance)
 ac_add_options MOZ_PGO=1
