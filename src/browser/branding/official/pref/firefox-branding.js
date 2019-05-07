@@ -252,6 +252,7 @@ pref("browser.search.widget.inNavBar", true);
 pref("browser.bookmarks.max_backups", 0);
 // Window Style
 pref("browser.uiCustomization.state", "{\"placements\":{\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"urlbar-container\",\"search-container\",\"downloads-button\",\"bookmarks-menu-button\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\"]},\"currentVersion\":15}");
+pref("lightweightThemes.selectedThemeID", "firefox-compact-light@mozilla.org");
 // Enable tabs below titlebar
 pref("browser.tabs.drawInTitlebar", false);
 // Disable GUI animation (tabs)
