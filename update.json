@@ -8,8 +8,8 @@
   },
   "win_x86-32": {
    "en-US": {
-    "version": "66.0.3",
-    "url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.3/iceweasel-66.0.3.en-US.win32.installer.exe"
+    "version": "66.0.4",
+    "url": "https://github.com/muslayev/iceweasel-win64/releases/download/v66.0.4/iceweasel-66.0.4.en-US.win32.installer.exe"
    }
   }
  },
