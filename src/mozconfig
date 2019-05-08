@@ -78,7 +78,7 @@ ac_add_options --disable-geckodriver
 # Disable enforcing that add-ons are signed by the trusted root
 ac_add_options MOZ_REQUIRE_SIGNING=0
 
-# Disable JavaScript Performance Profiling with third-party applications (e.g. shark, perf)
+# Disable JavaScript Performance Profiling with third-party applications (e.g. Shark, VTune)
 ac_add_options --disable-profiling
 
 # Disable IonMonkey JIT to help harden JavaScript against exploits
