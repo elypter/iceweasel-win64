@@ -14,11 +14,11 @@ ac_add_options --disable-debug-symbols
 # Disable building test libraries and programs
 ac_add_options --disable-tests
 
-# Enable jemalloc (memory allocator) - is not working with PGO
-# ac_add_options --enable-jemalloc
+# Enables default compiler optimization options
+ac_add_options --enable-optimize
 
-# Enable Profile-guided optimization (improving program runtime performance)
-ac_add_options MOZ_PGO=1
+# Enable jemalloc (memory allocator)
+ac_add_options --enable-jemalloc 
 
 # Disable and hide Firefox Accounts And Sync
 mk_add_options MOZ_SERVICES_SYNC=0
@@ -80,3 +80,12 @@ ac_add_options MOZ_REQUIRE_SIGNING=0
 
 # Disable Web App for Firefox performance analysis
 ac_add_options --disable-profiling
+
+# Disable Gamepad API (used for accessing and responding to signals from gamepads and other game controllers) [ESR 60]
+# ac_add_options --disable-gamepad
+
+# Disable DirectShow backend for HTML5 media [ESR 60]
+# ac_add_options --disable-directshow
+
+# Disable Quantum/Stylo (CSS engine) [ESR 60]
+# ac_add_options --disable-stylo
