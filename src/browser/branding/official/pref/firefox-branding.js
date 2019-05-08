@@ -189,7 +189,7 @@ pref("webgl.disabled", true);
 pref("media.eme.enabled", false);
 // Disable all GMP support (Gecko Media Plugins): OpenH264, Widevine CDM, etc.
 pref("media.gmp-provider.enabled", false);
-// Disable Ion-JS and Baseline JIT to help harden JavaScript against exploits
+// Disable IonMonkey JIT and Baseline JIT to help harden JavaScript against exploits
 pref("javascript.options.ion", false);
 pref("javascript.options.baselinejit", false);
 // Disable WebAssembly Web API (a type of code that can be run in browsers)
