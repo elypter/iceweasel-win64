@@ -78,7 +78,7 @@ ac_add_options --disable-geckodriver
 # Disable enforcing that add-ons are signed by the trusted root
 ac_add_options MOZ_REQUIRE_SIGNING=0
 
-# Disable Web App for Firefox performance analysis
+# Disable JavaScript Profiling with third-party application (e.g. shark, perf)
 ac_add_options --disable-profiling
 
 # Disable Gamepad API (used for accessing and responding to signals from gamepads and other game controllers) [ESR 60]
