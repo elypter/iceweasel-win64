@@ -81,6 +81,9 @@ ac_add_options MOZ_REQUIRE_SIGNING=0
 # Disable JavaScript Performance Profiling with third-party applications (e.g. shark, perf)
 ac_add_options --disable-profiling
 
+# Disable IonMonkey JIT to help harden JavaScript against exploits
+ac_add_options --disable-ion
+
 # Disable Gamepad API (used for accessing and responding to signals from gamepads and other game controllers) [ESR 60]
 # ac_add_options --disable-gamepad
 
