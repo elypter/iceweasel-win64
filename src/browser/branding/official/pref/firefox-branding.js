@@ -65,6 +65,8 @@ pref("datareporting.policy.dataSubmissionEnabled", false);
 pref("app.shield.optoutstudies.enabled", false);
 // Disable Extension Recommendations: "Allow Firefox to make personalized extension recomendation" in Prefs
 pref("browser.discovery.enabled", false);
+// Disable recommended extensions suggestions: "Recommend extensions as you browse" in Prefs
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 // Disable auto sending backlogged Crash Reports: "Allow Firefox to send backlogged crash reports" in Prefs
 pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
 // Disable Firefox Shield/Heartbeat (provides real-time understanding of existing Desktop user population)
@@ -332,5 +334,3 @@ pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
 pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 pref("browser.newtabpage.activity-stream.telemetry", false);
 pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-// Disable recommended extensions suggestions: "Recommend extensions as you browse" in Prefs
-pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
