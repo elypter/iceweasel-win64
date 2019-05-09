@@ -39,7 +39,7 @@ pref("devtools.selfxss.count", 0);
 
 // ICEWEASEL PREFS
 /************PREFETCHING************/
-// Disable URL prefetching of <link rel="prefetch"> (website hints to the Firefox that certain URL are likely to be visited)
+// Disable URL prefetching <link rel="prefetch"> (website hints to the Firefox that certain URL are likely to be visited)
 pref("network.prefetch-next", false);
 // Disable DNS prefetching for all URLs on the website
 pref("network.dns.disablePrefetch", true);
@@ -57,6 +57,8 @@ pref("dom.event.clipboardevents.enabled", false);
 pref("toolkit.coverage.opt-out", true);
 // Disable video statistic to reduce fingerprinting threat
 pref("media.video_stats.enabled", false);
+// Disable WebGL debug info being available to websites
+pref("webgl.enable-debug-renderer-info", false);
 // Disable Firefox Health Reporter: "Allow Firefox to send technical and interaction data to Mozilla" in Prefs [HIDDEN]
 pref("datareporting.healthreport.uploadEnabled", false);
 // Disable new data submission, master kill-switch
@@ -82,13 +84,11 @@ pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
 pref("dom.ipc.plugins.reportCrashURL", false);
 // Disable SSL Crash Reporter
 pref("security.ssl.errorReporting.enabled", false);
-// Disable WebGL debug info being available to websites
-pref("webgl.enable-debug-renderer-info", false);
 // Disable PingCentre telemetry (used in several System Add-ons)
 pref("browser.ping-centre.telemetry", false);
 // Disable sending daily pings to Mozilla about extensions and recent startups
 pref("extensions.getAddons.cache.enabled", false);
-// Disable pings (<a ping> in HTML5 specification for hyperlink auditing)
+// Disable pings <a ping> (HTML5 specification for hyperlink auditing)
 pref("browser.send_pings", false);
 // Only allow pinging the same host as the origin URL (if "browser.send_pings" is true)
 pref("browser.send_pings.require_same_host", true);
@@ -108,7 +108,7 @@ pref("privacy.donottrackheader.enabled", true);
 pref("network.http.spdy.enabled", false);
 // Disable Online Certificate Status Protocol (used for obtaining the revocation status of certificate)
 pref("security.OCSP.enabled", 0);
-// Enable Resist Fingerprinting Mode [not remembering last window size]
+// Enable Resist Fingerprinting Mode [doesn't remember the last window size]
 // pref("privacy.resistFingerprinting", true);
 
 /************MISC************/
@@ -130,7 +130,7 @@ pref("dom.vr.enabled", false);
 pref("dom.gamepad.enabled", false);
 // Disable Device Sensor API
 pref("device.sensors.enabled", false);
-// Disable Touch Events
+// Disable Touch Events API
 pref("dom.w3c_touch_events.enabled", 0);
 // Disable Battery Status API
 pref("dom.battery.enabled", false);
@@ -148,17 +148,17 @@ pref("dom.enable_performance", false);
 pref("dom.netinfo.enabled", false);
 // Disable Storage Access API (provides a way for embedded, cross-origin content to gain unrestricted access to storage that it would normally only have access to in a first-party context)
 pref("dom.storage_access.enabled", false);
-// Disable Captive Portal (connecting to public Wi-Fis)
-pref("network.captive-portal-service.enabled", false);
-// Disable Network Connectivity checks (Checks whether network services, such as IPv6, can be used)
-pref("network.connectivity-service.enabled", false);
+// Disable MediaStream Image Capture API (controls over camera features such as zoom, brightness, contrast, ISO and white balance)
+pref("dom.imagecapture.enabled", false);
 // Disable MediaDevices change detection
 pref("media.ondevicechange.enabled", false);
-// Disable MediaStream Image Capture API (Controls over camera features such as zoom, brightness, contrast, ISO and white balance)
-pref("dom.imagecapture.enabled", false);
+// Disable Captive Portal (connecting to public Wi-Fis)
+pref("network.captive-portal-service.enabled", false);
+// Disable Network Connectivity checks (checks whether network services, such as IPv6, can be used)
+pref("network.connectivity-service.enabled", false);
 // Disable Beacon asynchronous HTTP transfers (used for analytics)
 pref("beacon.enabled", false);
-// Disable Pocket (Save For Later cloud service)
+// Disable Pocket ("Save For Later" cloud service)
 pref("extensions.pocket.enabled", false);
 // Disable Screenshots
 pref("extensions.screenshots.disabled", true);
@@ -197,7 +197,7 @@ pref("javascript.options.wasm", false);
 // Disable OpenType-SVG fonts (fonts with multiple colors and gradients)
 pref("gfx.font_rendering.opentype_svg.enabled", false);
 // Disable online fonts (from fonts.google.com)
-pref("gfx.downloadable_fonts.enabled", false);
+// pref("gfx.downloadable_fonts.enabled", false);
 
 /************UPDATING************/
 // Disable Mozilla Maintenance Service (allows Firefox updates to occur in the background), and remove update URL
@@ -289,6 +289,8 @@ pref("browser.startup.homepage", "about:blank");
 pref("browser.newtabpage.enabled", false);
 // Disable UITour (first run)
 pref("browser.uitour.enabled", false);
+// Disable content blocking intro (first run)
+pref("browser.contentblocking.introCount", 20);
 // Disable What's New Notices (after Firefox updating)
 pref("browser.startup.homepage_override.mstone", "ignore");
 // Disable Slow Startup Notification
@@ -297,8 +299,6 @@ pref("browser.slowStartup.notificationDisabled", true);
 pref("identity.fxaccounts.enabled", false);
 // Disable and hide Get Add-ons [HIDDEN]
 // pref("extensions.getAddons.showPane", false);
-// Disable content blocking intro (first run)
-pref("browser.contentblocking.introCount", 20);
 // Disable address bar search suggestions: "Show search suggestions in address bar results" in Prefs
 pref("browser.urlbar.suggest.searches", false);
 // Don't show search suggestions ahead of browsing history in address bar results (if "browser.urlbar.suggest.searches" is true) [HIDDEN]
