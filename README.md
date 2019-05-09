@@ -1,5 +1,4 @@
 # Unofficial Iceweasel builds for Windows x64 (Installer + Portable)
-
 ## Download
 [The latest release](https://github.com/muslayev/iceweasel-win64/releases)<br />
 ### Description
