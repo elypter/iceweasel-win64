@@ -16,7 +16,7 @@
  "IceCat": {
   "win_x86-64": {
    "en-US": {
-    "version": "60.6.1",
+    "version": "60.6.2",
     "url": "https://github.com/muslayev/icecat-win64/releases/download/v60.6.2/icecat-60.6.2.en-US.win64.installer.exe"
    }
   },
